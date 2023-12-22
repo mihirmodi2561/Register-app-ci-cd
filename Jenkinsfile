@@ -16,13 +16,13 @@ pipeline {
     stages{
         stage("Cleanup Workspace"){
                 steps {
-                cleanWs()
+                   cleanWs()
                 }
         }
 
         stage("Checkout from SCM"){
                 steps {
-                    git branch: 'main', credentialsId: 'github', url: 'https://github.com/Ashfaque-9x/register-app'
+                   git credentialsId: 'github', url: 'https://github.com/mihirmodi2561/Register-app-ci-cd'
                 }
         }
 
