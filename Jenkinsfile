@@ -29,7 +29,7 @@ pipeline{
             steps{
                 script{
                     withSonarQubeEnv(credentialsId: 'Sonar-Qube'){
-                    sh "mvn Sonar-Qube:Sonar-Qube"
+                    sh "mvn sonar:sonar"
                     }
                 }
             }
